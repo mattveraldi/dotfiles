@@ -44,7 +44,7 @@ fi
 if ! type fdfind >/dev/null 2>&1; then
 	echo "Installing fd..."
 	sudo apt install fd-find -y
-	cp .bash_aliases $HOME
+	cp ./.bash_aliases $HOME
 fi
 
 if ! test -d nvim; then
