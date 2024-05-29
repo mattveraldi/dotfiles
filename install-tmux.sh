@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+set -e
 
 # Install tmux
 if ! command -v tmux >/dev/null 2>&1; then

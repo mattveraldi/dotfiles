@@ -1,11 +1,6 @@
 #!/bin/bash
 set -e
 
-if ! type git >/dev/null 2>&1; then
-	echo "Installing git..."
-	sudo apt install git -y
-fi
-
 if ! type nvim >/dev/null 2>&1; then
 	echo "Installing nvim dependencies..."
 	sudo apt-get install ninja-build gettext cmake unzip curl build-essential -y
@@ -44,11 +39,6 @@ fi
 if ! type fdfind >/dev/null 2>&1; then
 	echo "Installing fd..."
 	sudo apt install fd-find -y
-fi
-
-if ! test -f ~/.bash_aliases; then
-	echo "Creating symlink for bash_aliases..."
-	ln -s "$(pwd)/.bash_aliases" $HOME/.bash_aliases
 fi
 
 if ! test -d nvim; then

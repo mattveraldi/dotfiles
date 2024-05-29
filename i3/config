@@ -209,7 +209,7 @@ bindsym Ctrl+$mod+L exec i3lock
 
 # My apps
 bindsym Ctrl+$mod+O exec obs &
-bindsym Ctrl+$mod+F exec google-chrome &
+bindsym Ctrl+$mod+B exec google-chrome &
 bindsym Ctrl+$mod+E exec xdg-open .
 bindsym Ctrl+$mod+R exec ~/Scrivania/reaper/REAPER/reaper
-bindsym Ctrl+$mod+B exec ~/android-studio/bin/studio.sh
+bindsym Ctrl+$mod+A exec ~/android-studio/bin/studio.sh
