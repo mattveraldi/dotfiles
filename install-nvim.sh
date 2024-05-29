@@ -44,7 +44,11 @@ fi
 if ! type fdfind >/dev/null 2>&1; then
 	echo "Installing fd..."
 	sudo apt install fd-find -y
-	cp ./.bash_aliases $HOME
+fi
+
+if ! test -f ~/.bash_aliases; then
+	echo "Creating symlink for bash_aliases..."
+	ln -s "$(pwd)/.bash_aliases" $HOME/.bash_aliases
 fi
 
 if ! test -d nvim; then
