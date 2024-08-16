@@ -213,3 +213,5 @@ bindsym Ctrl+$mod+B exec google-chrome &
 bindsym Ctrl+$mod+E exec xdg-open .
 bindsym Ctrl+$mod+R exec ~/Scrivania/reaper/REAPER/reaper
 bindsym Ctrl+$mod+A exec ~/android-studio/bin/studio.sh
+bindsym Ctrl+$mod+V exec /snap/bin/code
+bindsym Ctrl+$mod+D exec /opt/docker-desktop/bin/docker-desktop
